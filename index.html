@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo App - Get your sh*t done and have a great day</title>
+    <meta
+      name="description"
+      content="ToDo App - made with Todo-Api - Design inspired by Coding Bootcamps Europe - HTML, CSS, Vanilla JS"
+    />
+    <meta name="author" content="Claudia Sollinger" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ToDo App</h1>
+      <p>Get your sh*t done and have a great day</p>
+    </header>
+    <aside>
+      <h2>Filter</h2>
+      <div class="filter">
+        <label class="container-filter">
+          <input
+            type="radio"
+            name="filter"
+            id="filter-all"
+            value="filter-all"
+          />
+          All
+        </label>
+        <label class="container-filter">
+          <input
+            type="radio"
+            name="filter"
+            id="filter-open"
+            value="filter-open"
+          />
+          Open
+        </label>
+        <label class="container-filter">
+          <input
+            type="radio"
+            name="filter"
+            id="filter-done"
+            value="filter-done"
+          />
+          Done
+        </label>
+      </div>
+    </aside>
+    <main>
+      <section class="todo-add">
+        <label for="new-todo"></label>
+        <input type="text" name="new-todo" id="" />
+        <button>add</button>
+      </section>
+      <section>
+        <ul class="todo-list">
+          <li class="todo">
+            <input type="checkbox" name="todo" id="" />
+            <label for="todo">my first todo</label>
+            <button class="button-delete--small">del</button>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <button class="button-delete">Remove all done Todos</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
